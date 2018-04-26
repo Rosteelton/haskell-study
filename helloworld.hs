@@ -80,4 +80,3 @@ sum'n'count x = let
     helper sum count x | x < 10 = (sum + x, count + 1)
                        | otherwise = helper (x `mod` 10  + sum) (count + 1) (x `div` 10)
    in (helper 0 0 (abs(x)))
-                            
